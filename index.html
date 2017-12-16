@@ -9,12 +9,40 @@
 </head>
 <body>
     <div class="container">
-       <form>
+       <form name="form">
          Enter your number:<br>
-        <input type="text" name:"number" value="guess a number here"> <br>
+        <input ondblclick=addNumber() type="text" name:"number"> <br>
         answer:<br>
-        <input type="text" name="answer"  value="we show you the answer"><br>
+        <input type="text" name="answer"><br>
        </form>
     </div>
+        <script>
+
+           function myRandom(start, end){
+                let result = start + Math.floor(Math.random() * (end - start) );
+                return result;
+            }
+
+            let random = myRandom(10, 100);
+            console.log(random);
+
+
+            function addNumber() {
+
+            if( form.number.value < random ){
+              "form.answer.value = 'it is more than this'";
+            }
+            else if( form.number.value > random){
+                "form.answer.value = 'it is less than this'";
+            }
+            
+            else{
+                "form.answer.value = 'No, its false'";
+            }
+            };
+        </script>
+
+
+
 </body>
 </html>
