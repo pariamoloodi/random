@@ -51,6 +51,11 @@ div#logo{
     font-size:30px;
     border-radius:5px;
     background:whitesmoke;
+    font-family:'Times New Roman', Times, serif;
+}
+#demo{
+    font-size:30px;
+    font-weight:bold;
 }
 
 
